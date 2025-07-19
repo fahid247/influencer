@@ -1,0 +1,152 @@
+/* nav styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+
+}
+
+.company-name {
+    font-size: 1.5rem;
+    color: rgba(58, 58, 58, 1);
+}
+
+ul,
+li {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    color: rgba(58, 58, 58, 1);
+    font-size: 1rem;
+}
+
+.search {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.shopping {
+    height: 2.1rem;
+    width: 2.1rem;
+}
+
+/* banner styles */
+.banner-container {
+    max-width: 1240px;
+    margin: 80px auto;
+}
+
+.banner {
+    display: flex;
+    gap: 133px;
+    align-items: center;
+}
+
+.banner-heading {
+    font-size: 3.25rem;
+}
+
+.banner-description {
+    font-size: 1rem;
+}
+
+.btn {
+    background-color: rgba(224, 44, 109, 1);
+    color: white;
+    border: none;
+    border-radius: 41px;
+    align-items: center;
+    display: flex;
+    height: 2.7rem;
+    font-size: 1rem;
+    padding: 1.5rem;
+}
+
+.right-arrow {
+    height: 20px;
+    width: 20px;
+}
+.main-camera{
+    width:100%;
+}
+
+.sponsors {
+    display: flex;
+    gap: 3.8rem;
+    justify-content: center;
+    padding: 35px 60px;
+    margin-top: 100px;
+    width: 75%;
+    
+}
+
+/* shared styles */
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* responsive styles */
+@media screen and (max-width:576px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+
+    }
+
+    .banner-text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .sponsors{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1rem;
+        
+    }
+
+    
+}
